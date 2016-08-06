@@ -1,5 +1,6 @@
 package com.anvil.mappr.Admin;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -29,8 +30,8 @@ public class AdminActivity extends AppCompatActivity{
         setContentView(R.layout.admin_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Mappr");
-        list= (ListView) findViewById(R.id.list_admin);
+        toolbar.setTitle("Admin");
+        list=(ListView) findViewById(R.id.listView);
         Resources res=getResources();
         AdminActivities=res.getStringArray(R.array.AdminList);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,AdminActivities);
@@ -39,19 +40,19 @@ public class AdminActivity extends AppCompatActivity{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch(position){
-                    case 1:
+                    case 0:
                         Intent intt1=new Intent(getBaseContext(),CreatePoll.class);
                         startActivity(intt1);
                         break;
-                    case 2:
+                    case 1:
                         Intent intt2=new Intent(getBaseContext(),Attendance.class);
                         startActivity(intt2);
                         break;
-                    case 3:
+                    case 2:
                         Intent intt3=new Intent(getBaseContext(),StudentMarks.class);
                         startActivity(intt3);
                         break;
-                    case 4:
+                    case 3:
                         Intent intt4=new Intent(getBaseContext(),StudentFee.class);
                         startActivity(intt4);
                         break;

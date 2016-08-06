@@ -11,7 +11,7 @@
 
     </string-array>
     <string-array name="AdminList">
-        <item>CREATE POLLS</item>
+        <item>CREATE POLL</item>
         <item>ATTENDANCE</item>
         <item>STUDENT MARKS</item>
         <item>STUDENT FEE</item>
