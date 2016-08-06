@@ -10,7 +10,6 @@
         android:id="@+id/ic_abstract"
         android:layout_width="280dp"
         android:layout_height="140dp"
-        android:src="@drawable/ic_abstract"
         android:layout_marginBottom="16dp"
         />
 

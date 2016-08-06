@@ -10,6 +10,7 @@
     tools:context="com.anvil.mappr.MainActivity">
 
 <Button
+    android:layout_marginTop="40dp"
     android:paddingTop="20dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -18,15 +19,24 @@
     android:id="@+id/signup"
     android:onClick="sign"
     />
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose user"
+        android:textSize="20dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"/>
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         android:paddingTop="30dp"
         android:layout_centerHorizontal="true"
-        android:padding="37dp"
+        android:padding="16dp"
         android:entries="@array/signup_as"
-        android:layout_below="@+id/login"
+        android:layout_below="@+id/text"
         ></Spinner>
     <Button
         android:layout_marginTop="30dp"
