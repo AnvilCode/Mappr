@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Mappr</string>
     <string-array name="signup_as">
+        <item>Admin</item>
         <item>Student</item>
         <item>Teacher</item>
-        <item>Instute</item>
         <item>Parent</item>
+        <item>Institute</item>
+
     </string-array>
 </resources>
