@@ -1,10 +1,10 @@
-package com.anvil.mappr.Admin;
+package com.anvil.mappr.Guardian;
 
 import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by RAJEEV YADAV on 8/6/2016.
  */
-public class Attendance extends AppCompatActivity {
+public class GuardianActivity extends AppCompatActivity {
 
 }

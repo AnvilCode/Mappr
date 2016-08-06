@@ -17,9 +17,13 @@
         </activity>
         <activity android:name=".Admin.AdminActivity"></activity>
         <activity android:name=".Admin.CreatePoll"></activity>
-        <activity android:name=".Admin.Attendance"></activity>
+        <activity android:name=".Teacher.Attendance"></activity>
         <activity android:name=".Admin.StudentMarks"></activity>
         <activity android:name=".Admin.StudentFee"></activity>
+        <activity android:name=".SignUp"></activity>
+        <activity android:name=".Guardian.GuardianActivity"></activity>
+        <activity android:name=".Student.StudentActivity"></activity>
+        <activity android:name=".Teacher.TeacherActivity"></activity>
     </application>
 
 </manifest>
