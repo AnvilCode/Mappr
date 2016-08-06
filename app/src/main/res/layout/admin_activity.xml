@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/adminpage"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <include
+    <include
             layout="@layout/app_bar"
             android:id="@+id/app_bar"/>
-    </LinearLayout>
-        <fragment
-            android:id="@+id/fragment_navigation_drawer"
-            android:layout_width="280dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout="@layout/fragment_navigation_drawer"
-            android:name="com.anvil.mappr.NavigationDrawerFragment"
-            tools:layout="@layout/fragment_navigation_drawer" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_admin">
+
+    </ListView>
 
 
 
-</android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
