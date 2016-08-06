@@ -11,8 +11,16 @@
         <include
             layout="@layout/app_bar"
             android:id="@+id/app_bar"/>
-
     </LinearLayout>
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout="@layout/fragment_navigation_drawer"
+            android:name="com.anvil.mappr.NavigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
 
 
 </android.support.v4.widget.DrawerLayout>
