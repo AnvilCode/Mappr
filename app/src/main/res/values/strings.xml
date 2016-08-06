@@ -10,4 +10,10 @@
         <item>Institute</item>
 
     </string-array>
+    <string-array name="AdminList">
+        <item>CREATE POLLS</item>
+        <item>ATTENDANCE</item>
+        <item>STUDENT MARKS</item>
+        <item>STUDENT FEE</item>
+    </string-array>
 </resources>

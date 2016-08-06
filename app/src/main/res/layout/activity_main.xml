@@ -3,21 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.anvil.mappr.MainActivity">
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
 
 <Button
-    android:layout_marginTop="40dp"
-    android:paddingTop="20dp"
-    android:layout_width="wrap_content"
+    android:layout_below="@id/app_bar"
+    android:layout_marginTop="100dp"
+    android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:text="Signup"
     android:id="@+id/signup"
     android:onClick="sign"
+    android:padding="5dp"
+    />
+
+    <Button
+    android:layout_marginTop="30dp"
+    android:id="@+id/login"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/signup"
+    android:layout_centerHorizontal="true"
+    android:text="Login"
+    android:onClick="log"
+    android:padding="5dp"
     />
     <TextView
         android:id="@+id/text"
@@ -28,6 +41,7 @@
         android:textSize="20dp"
         android:layout_below="@+id/login"
         android:layout_centerHorizontal="true"/>
+
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,16 +52,6 @@
         android:entries="@array/signup_as"
         android:layout_below="@+id/text"
         ></Spinner>
-    <Button
-        android:layout_marginTop="30dp"
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:paddingTop="16dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup"
-        android:layout_centerHorizontal="true"
-        android:text="Login"
-        android:onClick="log"
-        />
+
 
 </RelativeLayout>

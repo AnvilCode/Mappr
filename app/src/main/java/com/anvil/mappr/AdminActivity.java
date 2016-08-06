@@ -18,5 +18,6 @@ public class AdminActivity extends AppCompatActivity{
         setContentView(R.layout.admin_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Mappr");
     }
 }
