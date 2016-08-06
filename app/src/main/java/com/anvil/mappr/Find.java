@@ -3,6 +3,8 @@ package com.anvil.mappr;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
+import com.anvil.mappr.Admin.AdminActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 

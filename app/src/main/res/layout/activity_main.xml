@@ -51,7 +51,8 @@
         android:padding="16dp"
         android:entries="@array/signup_as"
         android:layout_below="@+id/text"
-        ></Spinner>
+        >
+    </Spinner>
 
 
 </RelativeLayout>

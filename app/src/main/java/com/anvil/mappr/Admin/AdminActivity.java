@@ -1,4 +1,4 @@
-package com.anvil.mappr;
+package com.anvil.mappr.Admin;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.List;
+
+import com.anvil.mappr.R;
 
 
 /**
@@ -38,19 +40,19 @@ public class AdminActivity extends AppCompatActivity{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch(position){
                     case 1:
-                        Intent intt1=new Intent(this,CreatePoll.class);
+                        Intent intt1=new Intent(getBaseContext(),CreatePoll.class);
                         startActivity(intt1);
                         break;
                     case 2:
-                        Intent intt2=new Intent(this,Attendence.class);
+                        Intent intt2=new Intent(getBaseContext(),Attendance.class);
                         startActivity(intt2);
                         break;
                     case 3:
-                        Intent intt3=new Intent(this,StudentMakes.class);
+                        Intent intt3=new Intent(getBaseContext(),StudentMarks.class);
                         startActivity(intt3);
                         break;
                     case 4:
-                        Intent intt4=new Intent(this,StudentFees.class);
+                        Intent intt4=new Intent(getBaseContext(),StudentFee.class);
                         startActivity(intt4);
                         break;
                 }
