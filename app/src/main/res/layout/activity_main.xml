@@ -114,8 +114,7 @@
         android:layout_height="100dp"
         android:layout_below="@+id/login_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-
         android:elevation="4dp"
+        android:src="@drawable/ic_login"
          />
 </RelativeLayout>

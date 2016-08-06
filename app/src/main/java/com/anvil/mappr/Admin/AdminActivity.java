@@ -27,7 +27,7 @@ public class AdminActivity extends AppCompatActivity{
         setContentView(R.layout.admin_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Admin");
+        getSupportActionBar().setTitle("Admin");
         list=(ListView) findViewById(R.id.listView);
         Resources res=getResources();
         AdminActivities=res.getStringArray(R.array.AdminList);
@@ -41,17 +41,14 @@ public class AdminActivity extends AppCompatActivity{
                         Intent intt1=new Intent(getBaseContext(),CreatePoll.class);
                         startActivity(intt1);
                         break;
+
                     case 1:
-                        Intent intt2=new Intent(getBaseContext(),Attendance.class);
+                        Intent intt2=new Intent(getBaseContext(),StudentMarks.class);
                         startActivity(intt2);
                         break;
                     case 2:
-                        Intent intt3=new Intent(getBaseContext(),StudentMarks.class);
+                        Intent intt3=new Intent(getBaseContext(),StudentFee.class);
                         startActivity(intt3);
-                        break;
-                    case 3:
-                        Intent intt4=new Intent(getBaseContext(),StudentFee.class);
-                        startActivity(intt4);
                         break;
                 }
             }

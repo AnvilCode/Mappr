@@ -11,7 +11,6 @@
 
     <string-array name="AdminList">
         <item>CREATE POLL</item>
-        <item>ATTENDANCE</item>
         <item>STUDENT MARKS</item>
         <item>STUDENT FEE</item>
     </string-array>
@@ -25,5 +24,12 @@
         <item>2206</item>
         <item>2207</item>
         <item>2208</item>
+        <item>2209</item>
+        <item>2210</item>
+    </string-array>
+    <string-array name="TeacherActivities">
+        <item>ATTENDANCE</item>
+        <item>CFEATE CLASS</item>
+        <item>CREATE POLL</item>
     </string-array>
 </resources>

@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -40,7 +42,7 @@ class  myAdapter extends ArrayAdapter<String>
     String[] roll;
     myAdapter(Context c,String[] roll)
     {
-super(c,R.layout.single_attendance_layout,R.id.roll_no);
+super(c,R.layout.single_attendance_layout,R.id.single_roll_no,roll);
         context=c;
         this.roll=roll;
     }
@@ -49,8 +51,10 @@ super(c,R.layout.single_attendance_layout,R.id.roll_no);
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row= inflater.inflate(R.layout.single_attendance_layout,parent,false);
-        TextView rollArray= (TextView) row.findViewById(R.id.roll_no);
+        TextView rollArray= (TextView) row.findViewById(R.id.single_roll_no);
         rollArray.setText(roll[position]);
+        Button button1= (Button) row.findViewById(R.id.present);
+        Button button2= (Button) row.findViewById(R.id.absent);
         return row;
     }
 }
