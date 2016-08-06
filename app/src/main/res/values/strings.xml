@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Mappr</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
     <string-array name="signup_as">
         <item>Admin</item>
         <item>Student</item>
