@@ -21,13 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 signup(v);
             }
         });
-        Button b1=(Button)findViewById(R.id.login);
-        b1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                log(v);
-            }
-        });
+
     }
     public void signup(View view){
         Spinner sign=(Spinner)findViewById(R.id.spinner);
@@ -51,27 +45,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
     }
-    public void log(View view){
-        Spinner sign=(Spinner)findViewById(R.id.spinner);
-        String signupas = String.valueOf(sign.getSelectedItem());
-        if (signupas.equals("Student")) {
-            // Intent intent=new Intent(this,StudentActivity.class);
 
-        }
-        else if(signupas.equals("Teacher")) {
-            //  Intent intent=new Intent(this,TeacherActivity.class);
-        }
-        else if(signupas.equals("Institute")){
-            //Intent intent=new Intent(this,InstituteActivity.class);
-        }
-        else if(signupas.equals("Admin")){
-            Intent intent=new Intent(this,AdminActivity.class);
-            startActivity(intent);
-        }
-        else if(signupas.equals("Parent")){
-            //  Intent intent=new Intent(this,ParentActivity.class);
-        }
-    }
 }
